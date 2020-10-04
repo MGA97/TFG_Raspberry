@@ -1,0 +1,138 @@
+<html>
+<head>
+	<script src="myChart.js"></script>
+
+  	<style>
+  	.container{
+	display:flex;
+  	}
+
+  	.label{
+    	flex:1;
+    	vertical-align: middle;
+    	text-align: center;
+  	}
+
+  	.x{
+    	flex:3;
+    	text-align: center;
+    	background-color: rgba(230, 230, 250, 0.7);
+    	margin: 10px;
+  	}
+
+  	.y{
+    	flex:3;
+    	text-align: center;
+    	background-color: rgba(230, 230, 250, 0.7);
+    	margin-top: 10px;
+    	margin-bottom:10px;
+	}
+
+  	.z{
+    	flex:3;
+    	text-align: center;
+    	background-color:rgba(230, 230, 250, 0.7) ;
+    	margin:10px;
+  	}
+	
+	.x2{
+    	flex:2;
+    	text-align: center;
+    	background-color:rgba(230, 230, 250, 0.7) ;
+    	margin:40px;
+	margin-top:20px;
+  	}
+
+  	.y2{
+    	flex:2;
+    	text-align: center;
+    	background-color:rgba(230, 230, 250, 0.7) ;
+    	margin:40px;
+	margin-top:20px;
+  	}
+
+  	h1{
+    	text-align: center;
+  	}
+
+	</style>
+
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="Chart.bundle.js"></script>
+</head>
+<body>
+	<h1>Representacion guante</h1>
+
+	<div id="labelD1" class="label">
+    		<h2> Flexion </h2>
+  	</div>
+  	<div id="guanteP1Container" class="container">
+	<div id="d1" class="x">
+		<canvas id="d1Chart"></canvas>
+    	</div><!--d1-->
+    	<div id="d2" class="y">
+      		<canvas id="d2Chart"></canvas>
+    	</div><!--d2-->
+    	<div id="d3" class="z">
+      		<canvas id="d3Chart"></canvas>
+    	</div><!--d3-->
+  	</div><!--guanteP1Container-->
+
+	
+  	<div id="guanteP1Container" class="container">
+	<div id="d4" class="x2">
+      		<canvas id="d4Chart"></canvas>
+    	</div><!--d4-->
+    	<div id="d5" class="y2">
+      		<canvas id="d5Chart"></canvas>
+    	</div><!--d5-->
+  	</div><!--guanteP2Container-->
+
+
+	<div id="labelAccel" class="label">
+    		<h2> Aceleracion </h2>
+  	</div>
+  	<div id="accelContainer" class="container">
+	<div id="xAccel" class="x">
+		<canvas id="xAccelChart"></canvas>
+    	</div><!--xAccel-->
+    	<div id="yAccel" class="y">
+      		<canvas id="yAccelChart"></canvas>
+    	</div><!--yAccel-->
+    	<div id="zAccel" class="z">
+      		<canvas id="zAccelChart"></canvas>
+    	</div><!--zAccel-->
+  	</div><!--accelContainer-->
+	
+  	<div id="labelGyro" class="label">
+		<h2> Giroscopio</h2>
+	</div>
+	<div id="gyroContainer" class="container">
+    	<div id="xGyro" class="x">
+     		<canvas id="xGyroChart"></canvas>
+    	</div><!--xgyro-->
+    	<div id="yGyro" class="y">
+      		<canvas id="yGyroChart"></canvas>
+    	</div><!--ygyro-->
+    	<div id="zGyro" class="z">
+      		<canvas id="zGyroChart"></canvas>
+    	</div><!--zgyro-->
+  	</div><!--gyroContainer-->
+  
+	<div id="labelMagn" class="label">
+		<h2>Magnetometro </h2>
+	</div>
+	<div id="magnContainer" class="container">
+	<div id="xMagn" class="x">
+		<canvas id="xMagnChart"></canvas>
+	</div><!--xMagn-->
+	<div id="yMagn" class="y">
+		<canvas id="yMagnChart"></canvas>
+	</div><!--xMagn-->
+	<div id="zMagn" class="z">
+		<canvas id="zMagnChart"></canvas>
+	</div><!--xMagn-->
+  	</div><!--magnContainer-->
+</body>
+</html>
+
