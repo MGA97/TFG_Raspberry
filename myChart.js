@@ -2,7 +2,7 @@ window.onload = function() {
 	console.log("LOADED");
 
     	//Configuration variables
-    	var updateInterval = 1000 //in ms
+    	var updateInterval = 500 //in ms
     	var numberElements = 200;
 
     	//Globals
